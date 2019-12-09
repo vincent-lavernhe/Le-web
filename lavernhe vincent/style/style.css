@@ -13,14 +13,71 @@ header {
   z-index: 2;
 }
 
-body header nav .menu .colonne {
+/* body header nav .menu .colonne {
   float: left;
-  display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
 
+ul.menu {
+  list-style-type: none;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #002f4b;
+}*/
+
+.nav {
+  height: 80px;
+  width: 100%;
+  background-color: #002f4b;
+  position: relative;
+  vertical-align:middle;
+  position: fixed;
+  top: 0;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 14px 16px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.acceuil .leiven .projects .contact {
+  color: white;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 30px 40px 28px 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
 }
 
 body header nav .menu .favicon {
@@ -38,13 +95,7 @@ img {
   height: auto;
 }
 
-body header nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #002f4b;
-}
+
 
 body .bkg-img {
   width: 100%;
@@ -76,7 +127,7 @@ body .main {
 
 /* Page D'acceuil */
 
-.main .titre_acceuil {
+.main .titre_accueil {
   color:lightblue;
   text-align: center;
   font-size: 115px;
@@ -87,8 +138,8 @@ body .main {
 /* Description */
 
 .main #wrapper .titre_descrition {
-  font-family: 'Yellowtail', cursive;
-  color: red;
+  font-family: 'Noto Serif SC', serif;
+  color: darkred;
 }
 
 .main {
@@ -136,8 +187,8 @@ body .main {
 }
 
 .titre_coo {
-  font-family: 'Yellowtail', cursive;
-  color: red;
+  font-family: 'Noto Serif SC', serif;
+  color: darkred;
 }
 
 .form {
@@ -155,6 +206,11 @@ body .main {
  .Coo .Coo2 {
    font-family: 'Noto Serif SC', serif;
  }
+
+ .topfleche {
+   bottom: 15px;
+ }
+
 /* FIN Coordonnées */
 
  /* FIN Page D'acceuil */
@@ -167,7 +223,8 @@ body .main {
 }
 
 .titre_avis {
-  font-family: 'Yellowtail', cursive;
+  font-family: 'Noto Serif SC', serif;
+  color: black;
 }
 
 main section form fieldset {
@@ -222,12 +279,12 @@ html body main section form textarea {
    text-align: center;
 }
 .copyright {
-  font-family: 'Charm', cursive;
+  font-family: 'Noto Serif SC', serif;
 }
 
 /* Projets */
 .projets_titre {
-  font-family: 'Yellowtail', cursive;
+  font-family: 'Noto Serif SC', serif;
   margin-left: 15%;
 }
 .legende_com, .legende_ppp {
@@ -255,7 +312,7 @@ html body main section form textarea {
 
 div[class^="col-"] {
   display: inline-block;
-	padding: 0 15px;
+	padding: 0 20px;
 }
 
 .col-2 {
